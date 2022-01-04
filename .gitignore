@@ -3,7 +3,7 @@ node_modules/
 .idea/
 .vscode/
 dist/
-coverage
+coverage/
 tmp/*
 !tmp/.gitkeep
 
