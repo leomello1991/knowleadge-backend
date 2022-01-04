@@ -6,6 +6,7 @@ import '@shared/container';
 import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 import swaggerUi from 'swagger-ui-express';
+import cors from 'cors';
 
 import upload from '@config/upload';
 import { AppError } from '@shared/error/AppError';
@@ -17,6 +18,7 @@ import { router } from './routes';
 createConnection();
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
