@@ -4,7 +4,7 @@ import multer from 'multer';
 import uploadConfig from '@config/upload';
 import { CreateUsersController } from '@modules/accounts/useCase/createUser/CreateUsersController';
 import { ProfileUserController } from '@modules/accounts/useCase/profileUserUseCase/ProfileUserController';
-import { UpdateUsersAvatarController } from '@modules/accounts/useCase/updateUserAvatar/UpdateUsersAvatarController';
+import { UpdateUsersAvatarController } from '@modules/cars/infra/updateUserAvatar/UpdateUsersAvatarController';
 import { ensureAuthenticated } from '@shared/infra/http/middlewares/ensureAuthenticated';
 
 const usersRoutes = Router();
